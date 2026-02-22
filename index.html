@@ -1,62 +1,13 @@
-# ⚡ Infinite Heroes — Comic Creator
-
-AI-powered comic book generator built with React + Anthropic Claude API.
-
----
-
-## 🚀 Deploy to Vercel (Free — 5 minutes)
-
-### Step 1 — Upload to GitHub
-1. Go to **github.com** → Sign in (or create free account)
-2. Click **"New repository"** → Name it `infinite-heroes`
-3. Upload all these files (drag & drop the folder contents)
-
-### Step 2 — Connect to Vercel
-1. Go to **vercel.com** → Sign in with GitHub
-2. Click **"Add New Project"**
-3. Select your `infinite-heroes` repository
-4. Click **"Deploy"** (Vercel auto-detects Vite)
-
-### Step 3 — Add your API Key
-1. In your Vercel project → Go to **Settings → Environment Variables**
-2. Add:
-   - **Name:** `ANTHROPIC_API_KEY`
-   - **Value:** your key from console.anthropic.com
-3. Click **Save** → then **Redeploy**
-
-✅ Your app is now live at `https://infinite-heroes.vercel.app` (or similar)
-
----
-
-## 🔑 Get an Anthropic API Key
-1. Go to **console.anthropic.com**
-2. Sign up / Log in
-3. Go to **API Keys** → **Create Key**
-4. Copy the key (starts with `sk-ant-...`)
-
----
-
-## 💻 Run Locally
-```bash
-npm install
-echo "ANTHROPIC_API_KEY=sk-ant-your-key-here" > .env
-npm run dev
-```
-Open http://localhost:5173
-
----
-
-## 📁 Project Structure
-```
-├── api/
-│   └── generate.js      ← Serverless proxy (keeps API key secret)
-├── src/
-│   ├── main.jsx
-│   └── App.jsx          ← Full comic generator
-├── public/
-│   └── favicon.svg
-├── index.html
-├── package.json
-├── vite.config.js
-└── vercel.json
-```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⚡ Infinite Heroes</title>
+    <style>* { margin: 0; padding: 0; box-sizing: border-box; } body { background: #080808; }</style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
